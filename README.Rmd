@@ -1,0 +1,82 @@
+---
+output:
+  html_document:
+    keep_md: true
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-",
+  fig.retina = 2
+)
+```
+
+ropencoesione
+=============
+
+`ropencoesione` - Get data from http://www.opencoesione.gov.it/
+
+### News
+
+- Version 0.1.0 released
+
+### Installation
+
+```{r eval=FALSE}
+devtools::install_github("patperu/ropencoesione")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+options(width=120)
+```
+
+### Usage
+
+```{r}
+library("ropencoesione")
+
+# current version
+packageVersion("ropencoesione")
+```
+
+### Test Results
+
+```{r}
+library(ropencoesione)
+library(testthat)
+
+date()
+
+test_dir("tests/")
+```
+
+### Query the projects
+
+```{r eval = TRUE}
+res1 <- records_by_progetti(territorio = "palermo-comune")
+str(res1, 1)
+
+str(res1[[1]], 1)
+
+res1[[1]]$results[,c(1,2,3,6:9)]
+
+# Filter by 'tema' and / or 'natura'
+res2 <- records_by_progetti(territorio = "roma-comune", tema = "occupazione") 
+
+```
+
+### Meta
+
+* Please [report any issues or bugs](https://github.com/patperu/ropencoesione/issues).
+* License: MIT
+
+### Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
+By participating in this project you agree to abide by its terms.

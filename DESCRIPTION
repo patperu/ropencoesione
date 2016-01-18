@@ -1,0 +1,17 @@
+Package: ropencoesione
+Title: Tools to Query the `OpenCoesione API`
+Description: Tools to Query the `OpenCoesione API` from www.opencoesione.gov.it
+Version: 0.0.1.0000
+License: MIT + file LICENSE
+Authors@R: person("Patrick", "Hausmann", role = c("aut", "cre"),
+    email = "patrick.hausmann@covimo.de")
+URL: https://github.com/patperu/ropencoesione
+BugReports: https://github.com/patperu/ropencoesione/issues
+Imports:
+    httr,
+    jsonlite,
+    lubridate,
+    stringi
+Suggests:
+    testthat
+RoxygenNote: 5.0.1
