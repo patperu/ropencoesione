@@ -15,21 +15,17 @@ records_by_progetti <- function(API_Key = FALSE, territorio = NULL, tema = NULL,
 
   url <- OPENCOESIONE_API_URL %s+% "progetti?"
 
-  path <- ""
-
   if(!is.null(territorio)){
-    path <- paste0(path, "&territorio=", territorio)
+    url <- paste0(url, "&territorio=", territorio)
   }
 
   if(!is.null(tema)){
-    path <- paste0(path, "&tema=", tema)
+    url <- paste0(url, "&tema=", tema)
   }
 
   if(!is.null(natura)){
-    path <- paste0(path, "&natura=", natura)
+    url <- paste0(url, "&natura=", natura)
   }
-
-  url <- paste0(url, path)
 
   w <- list()
   i <- 1
