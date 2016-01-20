@@ -20,6 +20,8 @@ knitr::opts_chunk$set(
 ropencoesione
 =============
 
+[![Build Status](https://api.travis-ci.org/patperu/ropencoesione.png?branch=master)](https://travis-ci.org/patperu/ropencoesione)
+
 `ropencoesione` - Get data from http://www.opencoesione.gov.it/
 
 ### News
@@ -58,7 +60,7 @@ test_dir("tests/")
 
 ### Query the projects
 
-```{r eval = FALSE}
+```{r eval = TRUE}
 res1 <- records_by_progetti(territorio = "palermo-comune")
 str(res1, 1)
 

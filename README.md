@@ -6,6 +6,8 @@
 ropencoesione
 =============
 
+[![Build Status](https://api.travis-ci.org/patperu/ropencoesione.png?branch=master)](https://travis-ci.org/patperu/ropencoesione)
+
 `ropencoesione` - Get data from http://www.opencoesione.gov.it/
 
 ### News
@@ -40,7 +42,7 @@ library(ropencoesione)
 library(testthat)
 
 date()
-#> [1] "Wed Jan 20 09:05:41 2016"
+#> [1] "Wed Jan 20 09:27:43 2016"
 
 test_dir("tests/")
 #> testthat results ========================================================================================================
