@@ -58,7 +58,7 @@ test_dir("tests/")
 
 ### Query the projects
 
-```{r eval = TRUE}
+```{r eval = FALSE}
 res1 <- records_by_progetti(territorio = "palermo-comune")
 str(res1, 1)
 

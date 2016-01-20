@@ -40,7 +40,7 @@ library(ropencoesione)
 library(testthat)
 
 date()
-#> [1] "Mon Jan 18 15:45:37 2016"
+#> [1] "Wed Jan 20 09:05:41 2016"
 
 test_dir("tests/")
 #> testthat results ========================================================================================================
