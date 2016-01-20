@@ -10,8 +10,7 @@ BugReports: https://github.com/patperu/ropencoesione/issues
 Imports:
     httr,
     jsonlite,
-    lubridate,
-    stringi
+    lubridate
 Suggests:
     testthat
 RoxygenNote: 5.0.1

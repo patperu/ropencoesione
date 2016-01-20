@@ -13,7 +13,7 @@ records_by_progetti <- function(API_Key = FALSE, territorio = NULL, tema = NULL,
 
   user_agent <- 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
 
-  url <- OPENCOESIONE_API_URL %s+% "progetti?"
+  url <- paste0(OPENCOESIONE_API_URL, "progetti?")
 
   if(!is.null(territorio)){
     url <- paste0(url, "&territorio=", territorio)
