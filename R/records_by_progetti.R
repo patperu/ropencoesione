@@ -41,7 +41,7 @@ records_by_progetti <- function(API_Key = FALSE, territorio = NULL, tema = NULL,
 
     httr::stop_for_status(res)
 
-    srs <- jsonlite::fromJSON(content(res, as="text"), flatten=TRUE)
+    srs <- jsonlite::fromJSON(content(res, as="text", encoding = "UTF-8"), flatten=TRUE)
     class(srs) <- c("ropencoesione_srs", class(srs))
     w[[i]] <- srs
 
