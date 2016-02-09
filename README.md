@@ -31,7 +31,7 @@ library("ropencoesione")
 
 # current version
 packageVersion("ropencoesione")
-#> [1] '0.0.1.1000'
+#> [1] '0.1.0.1000'
 ```
 
 ### Test Results
@@ -42,7 +42,7 @@ library(ropencoesione)
 library(testthat)
 
 date()
-#> [1] "Wed Jan 20 09:27:43 2016"
+#> [1] "Tue Feb 09 19:18:37 2016"
 
 test_dir("tests/")
 #> testthat results ========================================================================================================
@@ -54,9 +54,6 @@ test_dir("tests/")
 
 ```r
 res1 <- records_by_progetti(territorio = "palermo-comune")
-#> No encoding supplied: defaulting to UTF-8.
-#> No encoding supplied: defaulting to UTF-8.
-#> No encoding supplied: defaulting to UTF-8.
 str(res1, 1)
 #> List of 3
 #>  $ :List of 8
@@ -134,9 +131,6 @@ res1[[1]]$results[,c(1,2,3,6:9)]
 
 # Filter by 'tema' and / or 'natura'
 res2 <- records_by_progetti(territorio = "roma-comune", tema = "occupazione") 
-#> No encoding supplied: defaulting to UTF-8.
-#> No encoding supplied: defaulting to UTF-8.
-#> No encoding supplied: defaulting to UTF-8.
 ```
 
 ### Meta

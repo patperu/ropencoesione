@@ -82,7 +82,7 @@ img {
 
 # current version
 packageVersion(&quot;ropencoesione&quot;)
-#&gt; [1] '0.0.1.1000'</code></pre>
+#&gt; [1] '0.1.0.1000'</code></pre>
 </div>
 <div id="test-results" class="section level3">
 <h3>Test Results</h3>
@@ -90,7 +90,7 @@ packageVersion(&quot;ropencoesione&quot;)
 library(testthat)
 
 date()
-#&gt; [1] &quot;Wed Jan 20 09:27:43 2016&quot;
+#&gt; [1] &quot;Tue Feb 09 19:18:37 2016&quot;
 
 test_dir(&quot;tests/&quot;)
 #&gt; testthat results ========================================================================================================
@@ -99,9 +99,6 @@ test_dir(&quot;tests/&quot;)
 <div id="query-the-projects" class="section level3">
 <h3>Query the projects</h3>
 <pre class="r"><code>res1 &lt;- records_by_progetti(territorio = &quot;palermo-comune&quot;)
-#&gt; No encoding supplied: defaulting to UTF-8.
-#&gt; No encoding supplied: defaulting to UTF-8.
-#&gt; No encoding supplied: defaulting to UTF-8.
 str(res1, 1)
 #&gt; List of 3
 #&gt;  $ :List of 8
@@ -178,10 +175,7 @@ res1[[1]]$results[,c(1,2,3,6:9)]
 #&gt; 25           02.10.109            18473730         0.0        0.00000
 
 # Filter by 'tema' and / or 'natura'
-res2 &lt;- records_by_progetti(territorio = &quot;roma-comune&quot;, tema = &quot;occupazione&quot;) 
-#&gt; No encoding supplied: defaulting to UTF-8.
-#&gt; No encoding supplied: defaulting to UTF-8.
-#&gt; No encoding supplied: defaulting to UTF-8.</code></pre>
+res2 &lt;- records_by_progetti(territorio = &quot;roma-comune&quot;, tema = &quot;occupazione&quot;) </code></pre>
 </div>
 <div id="meta" class="section level3">
 <h3>Meta</h3>
